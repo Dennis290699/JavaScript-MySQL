@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="./assets/icons/1.png">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>CRUD de Empleados</title>
+</head>
+
+<body>
+    <h1>CRUD de Empleados</h1>
+
+    <!-- Formulario para agregar un nuevo empleado -->
+    <form id="addEmployeeForm">
+        <label for="emp_no">ID de Empleado:</label>
+        <input type="text" id="emp_no" name="emp_no" required><br>
+        <label for="first_name">Nombre:</label>
+        <input type="text" id="first_name" name="first_name" required><br>
+        <label for="last_name">Apellido:</label>
+        <input type="text" id="last_name" name="last_name" required><br>
+        <label for="birth_date">Fecha de Nacimiento:</label>
+        <input type="date" id="birth_date" name="birth_date" required><br>
+        <label for="hire_date">Fecha de Contratación:</label>
+        <input type="date" id="hire_date" name="hire_date" required><br>
+        <button type="submit">Agregar Empleado</button>
+    </form>
+
+    <!-- Tabla para mostrar la lista de empleados -->
+    <table id="employeeTable">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Fecha de Nacimiento</th>
+                <th>Fecha de Contratación</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="employeeTableBody">
+            <!-- Aquí se llenarán los datos de los empleados -->
+        </tbody>
+    </table>
+
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
